@@ -87,3 +87,16 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+:root {
+  --blk: #000;
+  --btn: #3882f6;
+  --drk-bg: #1f2937;
+  --header-logo-txt: #f9faf8;
+  --hero-main-txt: #f9faf8;
+  --hero-secondary-txt: #e5e7eb;
+  --information-header-txt: #1f2937;
+  --quote-bg: #e5e7eb;
+  --quote-txt: #1f2937;
+  --white: #fff;
+}
