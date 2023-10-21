@@ -1,0 +1,280 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 80%;
+  background-color: #000;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+#container {
+  margin: 1rem;
+}
+
+/* Header */
+#header {
+  background-color: #1f2937;
+  color: #f9faf8;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1.5rem 7rem;
+}
+#header #logo {
+  display: flex;
+}
+#header #logo h1 {
+  font-size: 2rem;
+  margin-left: 0.6rem;
+}
+#header #logo p {
+  font-size: 2rem;
+  border: 1px solid #fff;
+  line-height: 1;
+  padding: 0 0.4rem;
+}
+#header nav#nav {
+  display: flex;
+}
+#header nav#nav a {
+  text-decoration: none;
+}
+#header nav#nav a li {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+/* Hero */
+#hero {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.hero {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  min-width: 100%;
+  padding: 4rem 7rem;
+}
+.hero_left, .hero_right {
+  max-width: 50%;
+}
+.hero .hero_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 1rem;
+}
+.hero .hero_left h1 {
+  font-size: 3rem;
+}
+.hero .hero_left p {
+  padding: 0.5rem 0;
+}
+.hero .hero_left button.btn-hero {
+  background-color: #3882f6;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 2rem;
+  border-radius: 1rem;
+}
+.hero .hero_left button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #3882f6;
+  border: none;
+  outline: none;
+}
+.hero .hero_right {
+  width: 100%;
+  background-color: #6e6868;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#boxes {
+  background-color: #fff;
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#boxes h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+#boxes .boxes {
+  display: flex;
+  padding: 0 7rem 4rem 7rem;
+  margin: 1.5rem 0 -2rem;
+}
+#boxes .boxes img {
+  border: 1px solid #3882f6;
+  border-radius: 0.5rem;
+  height: 8rem;
+  width: -webkit-fill-available;
+}
+#boxes .boxes .box {
+  margin: 1.5rem;
+}
+#boxes .boxes .box p {
+  text-align: center;
+}
+
+#quote {
+  background-color: #e5e7eb;
+  padding: 9rem 0;
+}
+#quote .quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+#quote .quote q {
+  font-size: 2rem;
+  font-style: italic;
+}
+#quote .quote p {
+  position: absolute;
+  right: 13rem;
+  top: 6rem;
+  font-size: 1.8rem;
+  font-style: normal;
+}
+
+#action {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 7rem;
+}
+#action .action {
+  background-color: #3882f6;
+  color: #fff;
+  padding: 2rem;
+}
+#action .action-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+#action .action-left h3 {
+  font-size: 1.5rem;
+}
+#action .action-left p {
+  font-size: 1.1rem;
+}
+#action .action-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+#action .action-right button.sign-up {
+  background-color: #fff;
+  color: #3882f6;
+  border: none;
+  padding: 0.3rem 2rem;
+  border-radius: 1rem;
+}
+#action .action-right button:hover {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=style.css.map */
