@@ -184,7 +184,8 @@ textarea:not([rows]) {
   align-items: center;
 }
 .hero .hero_right img {
-  height: 15rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 #boxes {
