@@ -142,6 +142,7 @@ textarea:not([rows]) {
   justify-content: space-between;
   min-width: 100%;
   padding: 4rem 7rem;
+  height: 30rem;
 }
 .hero_left, .hero_right {
   max-width: 50%;
@@ -149,6 +150,7 @@ textarea:not([rows]) {
 .hero .hero_left {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: flex-start;
   padding-right: 1rem;
 }
@@ -157,6 +159,8 @@ textarea:not([rows]) {
 }
 .hero .hero_left p {
   padding: 0.5rem 0;
+  line-height: 1.5;
+  font-size: 1.2rem;
 }
 .hero .hero_left button.btn-hero {
   background-color: #3882f6;
@@ -179,13 +183,18 @@ textarea:not([rows]) {
   justify-content: center;
   align-items: center;
 }
+.hero .hero_right img {
+  height: 15rem;
+}
 
 #boxes {
   background-color: #fff;
   color: #1f2937;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 30rem;
 }
 #boxes h3 {
   font-size: 2rem;
@@ -201,6 +210,7 @@ textarea:not([rows]) {
   border-radius: 0.5rem;
   height: 8rem;
   width: -webkit-fill-available;
+  height: 15rem;
 }
 #boxes .boxes .box {
   margin: 1.5rem;
@@ -277,4 +287,13 @@ textarea:not([rows]) {
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+#footer {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

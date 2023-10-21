@@ -166,6 +166,7 @@ textarea:not([rows]) {
   justify-content: space-between;
   min-width: 100%;
   padding: 4rem 7rem;
+  height: 30rem;
 
   &_left,
   &_right {
@@ -175,6 +176,7 @@ textarea:not([rows]) {
   .hero_left {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: flex-start;
     padding-right: 1rem;
 
@@ -184,6 +186,8 @@ textarea:not([rows]) {
 
     p {
       padding: 0.5rem 0;
+      line-height: 1.5;
+      font-size: 1.2rem;
     }
 
     button.btn-hero {
@@ -208,6 +212,10 @@ textarea:not([rows]) {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img {
+      height: 15rem;
+    }
   }
 }
 
@@ -216,7 +224,9 @@ textarea:not([rows]) {
   color: $information-header-txt;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 30rem;
 
   h3 {
     font-size: 2rem;
@@ -235,6 +245,7 @@ textarea:not([rows]) {
       border-radius: 0.5rem;
       height: 8rem;
       width: -webkit-fill-available;
+      height: 15rem;
     }
 
     .box {
@@ -329,4 +340,15 @@ textarea:not([rows]) {
       outline: none;
     }
   }
+}
+
+// footer
+
+#footer {
+  background-color: $drk-bg;
+  color: $white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
