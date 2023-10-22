@@ -25,6 +25,7 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   // font-size: 62.5%;
   // /* 16px * 0.625 = 10px; */
 }
@@ -54,7 +55,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 1280px;
   background-color: $blk;
 }
 
@@ -109,7 +110,8 @@ textarea:not([rows]) {
 }
 
 #container {
-  margin: 1rem;
+  margin: 1rem auto;
+  max-width: 84%;
 }
 
 /* Header */
@@ -179,7 +181,7 @@ textarea:not([rows]) {
   .hero_left {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     padding-right: 1rem;
 
@@ -248,7 +250,7 @@ textarea:not([rows]) {
       border-radius: 0.5rem;
       height: 8rem;
       width: -webkit-fill-available;
-      height: 15rem;
+      height: 10rem;
     }
 
     .box {
@@ -281,7 +283,7 @@ textarea:not([rows]) {
 
     p {
       position: absolute;
-      right: 24rem;
+      right: 15rem;
       top: 6rem;
       font-size: 1.8rem;
       font-style: normal;
