@@ -121,13 +121,15 @@ textarea:not([rows]) {
 }
 #header nav#nav {
   display: flex;
+  width: 10rem;
+  justify-content: space-between;
 }
 #header nav#nav a {
   text-decoration: none;
+  font-size: 1rem;
 }
-#header nav#nav a li {
-  list-style: none;
-  margin-left: 1rem;
+#header nav#nav a:hover {
+  font-weight: bolder;
 }
 
 /* Hero */
